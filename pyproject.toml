@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mindledger"
+version = "0.1.0"
+description = "A private, local ledger of your coding-agent usage for Claude Code: token stats, a never-decrease ledger, config backups and a self-contained HTML report."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "John B Joseph" }]
+requires-python = ">=3.9"
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Environment :: Console",
+]
+
+[project.scripts]
+mindledger = "mindledger.cli:main"
+
+[tool.setuptools]
+packages = ["mindledger"]

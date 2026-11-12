@@ -1,0 +1,25 @@
+# never commit real usage data or local state
+.mindledger/
+_local_run/
+*.db
+*.zip
+stats.json
+public.json
+report.html
+ledger.jsonl
+sync.log
+.leakcheck.local
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# os / editors
+.DS_Store
+.idea/
+.vscode/
